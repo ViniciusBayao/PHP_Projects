@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieStar</title>
+    <link rel="short icon" href="img/moviestar.ico" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- MovieStar CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="main-navbar" class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/logo.svg" alt="MovieStar">
+                <span id="moviestar-title">MovieStar</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form id="search-form" class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Movies" aria-label="Search">
+                <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Entrar</a>
+                </li>
+              </ul>
+          </nav>
+    </header>
+    <div id="main-container" class="container-fluid">
+      <div class="offset-md-4 col-md-4 new-movie-container">
+        <h1 class="page-title">Add Movie</h1>
+        <p class="page-description">Add your review and share it with the world!</p>
+        <form id="add-movie-form" action="">
+          <div class="form-group">
+              <label for="name">Title:</label>
+              <input type="text" class="form-control" id="name" placeholder="Digite o Title do filme">
+          </div>
+          <div class="form-group">
+              <label for="image">Image:</label>
+              <input type="file" name="image" class="form-control-file">
+          </div>
+          <div class="form-group">
+              <label for="length">Duration:</label>
+              <input type="text" class="form-control" id="length" placeholder="Enter Duration of the movie">
+          </div>
+          <div class="form-group">
+              <label for="category">Movie category:</label>
+              <select class="form-control" name="category" id="cateogry">
+                  <option value="">Select</option>
+                  <option value="action">Action</option>
+                  <option value="drama">Drama</option>
+                  <option value="comedy">Comedy</option>
+                  <option value="fantasy">Fantasy / Fiction</option>
+                  <option value="romance">Romance</option>
+              </select>
+          </div>
+          <div class="form-group">
+              <label for="trailer">Trailer:</label>
+              <input type="text" class="form-control" id="trailer" placeholder="Enter trailer link">
+          </div>
+          <div class="form-group">
+              <label for="description">Description:</label>
+              <textarea class="form-control" name="description" id="description" rows="5"></textarea>
+          </div>
+          <input type="submit" class="btn form-btn" value="Add Movie">
+        </form>
+      </div>
+    </div>
+    <footer id="footer">
+        <div id="social-container">
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div id="footer-links-container">
+            <ul>
+                <li><a href="#">Add Movie</a></li>
+                <li><a href="#">Addr review</a></li>
+                <li><a href="#">Sign in / Sign up</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2020 Hora de Codar</p>
+    </footer>
+</body>
+</html>

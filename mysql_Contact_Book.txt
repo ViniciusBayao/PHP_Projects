@@ -1,0 +1,5 @@
+CREATE TABLE contacts( 
+	id VARCHAR(150),
+	phone VARCHAR(20),
+	observations TEXT
+);
