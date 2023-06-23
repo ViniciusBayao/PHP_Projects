@@ -1,3 +1,5 @@
+CREATE DATABASE agenda;
+
 CREATE TABLE contacts( 
 	id VARCHAR(150),
 	phone VARCHAR(20),
